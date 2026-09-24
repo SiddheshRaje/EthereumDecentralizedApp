@@ -1,0 +1,13 @@
+{
+  "name": "cognitensor-local-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "setup": "npm install --prefix smart_contract && npm install --prefix application",
+    "dev:local": "bash scripts/dev-local.sh",
+    "chain": "npm run node --prefix smart_contract",
+    "deploy:local": "npm run deploy:local --prefix smart_contract",
+    "app": "npm run dev --prefix application -- --host 0.0.0.0",
+    "test": "npm test --prefix smart_contract && npm run build --prefix application"
+  }
+}

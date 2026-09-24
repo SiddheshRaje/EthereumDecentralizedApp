@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #232225;
+  overflow-x: hidden;
+}
+
+.home-hero {
+  min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 1023px) {
+  .home-hero {
+    min-height: auto;
+  }
+}
+
+.gradient-bg-welcome {
+  background-color:#232225;
+  
+}
+
+.gradient-bg-services {
+  background-color:#0f0e13;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #232225;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,25%,1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #232225;
+  background-image: 
+    radial-gradient(at 0% 100%, hsla(253,16%,7%,1) 0, transparent 53%), 
+    radial-gradient(at 50% 150%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eth-card {
+  background-color:#a099ff;
+  background-image: 
+    radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%), 
+    radial-gradient(at 67% 20%, hsla(357,94%,71%,1) 0, transparent 59%), 
+    radial-gradient(at 88% 35%, hsla(222,81%,65%,1) 0, transparent 50%), 
+    radial-gradient(at 31% 91%, hsla(9,61%,61%,1) 0, transparent 52%), 
+    radial-gradient(at 27% 71%, hsla(336,91%,65%,1) 0, transparent 49%), 
+    radial-gradient(at 74% 89%, hsla(30,98%,65%,1) 0, transparent 51%), 
+    radial-gradient(at 53% 75%, hsla(174,94%,68%,1) 0, transparent 45%);
+}
+
+.ethereum-wallet-card {
+  position: relative;
+  aspect-ratio: 1.65 / 1;
+  min-height: 240px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(125, 211, 252, 0.65), transparent 31%),
+    radial-gradient(circle at 18% 85%, rgba(244, 114, 182, 0.48), transparent 34%),
+    linear-gradient(135deg, #5146b8 0%, #6559d5 45%, #323b8f 100%);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 24px 55px rgba(8, 12, 35, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.ethereum-wallet-card::before,
+.ethereum-wallet-card::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+}
+
+.ethereum-wallet-card::before {
+  width: 260px;
+  height: 260px;
+  top: -145px;
+  right: -70px;
+}
+
+.ethereum-wallet-card::after {
+  width: 190px;
+  height: 190px;
+  right: -75px;
+  bottom: -95px;
+}
+
+.ethereum-card-chip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 46px;
+  height: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f4d58d, #cda95b);
+  box-shadow: inset 0 0 0 1px rgba(72, 46, 8, 0.18);
+}
+
+.ethereum-card-chip span {
+  border-right: 1px solid rgba(72, 46, 8, 0.25);
+}
+
+.ethereum-card-chip span:last-child {
+  border-right: 0;
+}
+
+@media (max-width: 639px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  .ethereum-wallet-card {
+    min-height: 220px;
+  }
+
+  .ethereum-card-chip {
+    width: 40px;
+    height: 30px;
+  }
+}
+
+.local-network-alert {
+  box-shadow:
+    0 0 0 1px rgba(239, 68, 68, 0.25),
+    0 14px 35px rgba(127, 29, 29, 0.35);
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(at 4% 36%, hsla(0,0%,100%,1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

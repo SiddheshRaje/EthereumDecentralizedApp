@@ -1,0 +1,52 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  role="img"
+  aria-labelledby="cognitensor-favicon-title"
+>
+  <title id="cognitensor-favicon-title">Cognitensor</title>
+  <defs>
+    <radialGradient id="tile" cx="0" cy="0" r="1" gradientTransform="translate(18 12) rotate(46) scale(67)">
+      <stop stop-color="#242950" />
+      <stop offset="1" stop-color="#0d1022" />
+    </radialGradient>
+    <linearGradient id="ribbon" x1="50" y1="10" x2="17" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38e8bd" />
+      <stop offset="0.22" stop-color="#20bde8" />
+      <stop offset="0.5" stop-color="#7257f5" />
+      <stop offset="0.76" stop-color="#dd4cbd" />
+      <stop offset="1" stop-color="#ff9d78" />
+    </linearGradient>
+    <linearGradient id="shine" x1="48" y1="13" x2="19" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.48" />
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#tile)" />
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="15.25" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5" />
+
+  <path
+    d="M47 18.5A20 20 0 1 0 47 45.5"
+    fill="none"
+    stroke="#050713"
+    stroke-opacity="0.42"
+    stroke-width="15"
+    stroke-linecap="round"
+  />
+  <path
+    d="M47 18.5A20 20 0 1 0 47 45.5"
+    fill="none"
+    stroke="url(#ribbon)"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+  <path
+    d="M47 18.5A20 20 0 0 0 18.5 15"
+    fill="none"
+    stroke="url(#shine)"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+</svg>
