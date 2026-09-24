@@ -4,7 +4,7 @@ import { SiEthereum } from "react-icons/si";
 import { BsExclamationTriangleFill, BsInfoCircle } from "react-icons/bs";
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
-import { Loader } from ".";
+import Loader from "./Loader";
 
 const Input = ({
   disabled,
